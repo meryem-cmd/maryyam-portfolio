@@ -28,17 +28,19 @@ export default function Navbar() {
           <a href="#contact" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">Contact</a>
         </div>
 
-        {/* Resume Button */}
-        <button 
-          className="px-7 py-3 rounded-lg font-bold uppercase text-base tracking-wider transition-all duration-300"
-          style={{ 
-            backgroundColor: '#00D9FF', 
+        {/* Resume Button — downloads the PDF from /public/resume.pdf */}
+        <a
+          href="/resume.pdf"
+          download="Maryyam-Tanveer-Resume.pdf"
+          className="px-7 py-3 rounded-lg font-bold uppercase text-base tracking-wider transition-all duration-300 inline-block"
+          style={{
+            backgroundColor: '#00D9FF',
             color: '#0a0e27',
             boxShadow: '0 0 15px rgba(0, 217, 255, 0.3)'
           }}
         >
           ↓ RESUME
-        </button>
+        </a>
       </div>
     </nav>
   );
