@@ -95,30 +95,30 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="min-h-screen bg-dark flex items-center py-24 relative overflow-hidden"
+      className="min-h-screen bg-dark flex items-center py-16 sm:py-24 relative overflow-hidden"
     >
 
       {/* Blur blobs to match Hero/About/Projects premium feel */}
-      <div className="absolute -top-32 left-0 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute -top-32 left-0 w-56 h-56 sm:w-96 sm:h-96 bg-purple-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-48 h-48 sm:w-80 sm:h-80 bg-cyan-500/10 blur-[120px] rounded-full"></div>
 
-      <div className="max-w-[1400px] mx-auto px-10 lg:px-20 w-full relative z-10">
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-20 w-full relative z-10">
         
         {/* Section Header */}
-        <div className={`mb-16 ${fade()}`} style={{ animationDelay: '0.05s' }}>
-          <h2 className="text-5xl md:text-6xl font-black leading-tight mb-8" style={{ color: '#00D9FF' }}>
+        <div className={`mb-10 sm:mb-16 ${fade()}`} style={{ animationDelay: '0.05s' }}>
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black leading-tight mb-5 sm:mb-8" style={{ color: '#00D9FF' }}>
             Skills & Technologies
           </h2>
-          <div className="w-20 h-1 rounded-full" style={{ backgroundColor: '#00D9FF' }}></div>
+          <div className="w-16 sm:w-20 h-1 rounded-full" style={{ backgroundColor: '#00D9FF' }}></div>
         </div>
 
         {/* Filter Tabs */}
-        <div className={`flex flex-wrap gap-3 mb-12 ${fade()}`} style={{ animationDelay: '0.15s' }}>
+        <div className={`flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-12 ${fade()}`} style={{ animationDelay: '0.15s' }}>
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className="px-6 py-2 rounded-lg font-mono text-sm uppercase tracking-wider transition-all duration-300 border"
+              className="px-4 py-1.5 sm:px-6 sm:py-2 rounded-lg font-mono text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 border whitespace-nowrap"
               style={{
                 backgroundColor: activeCategory === category ? '#00D9FF' : 'transparent',
                 color: activeCategory === category ? '#0a0e27' : '#00D9FF',
@@ -130,32 +130,32 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Skills Grid - 3 per row, small & cute cards */}
-        <div className={`grid grid-cols-2 sm:grid-cols-3 gap-4 ${fade()}`} style={{ animationDelay: '0.3s' }}>
+        {/* Skills Grid - responsive column count */}
+        <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 ${fade()}`} style={{ animationDelay: '0.3s' }}>
           {filteredSkills.map((skill) => {
             const profColor = getProficiencyColor(skill.proficiency);
             return (
               <div
                 key={skill.id}
-                className="group p-4 rounded-lg backdrop-blur-sm border transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] cursor-pointer"
+                className="group p-3 sm:p-4 rounded-lg backdrop-blur-sm border transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] cursor-pointer"
                 style={{
                   borderColor: 'rgba(0, 217, 255, 0.3)',
                   backgroundColor: 'rgba(26, 31, 58, 0.5)',
                 }}
               >
                 {/* Skill Name */}
-                <h3 className="text-sm font-bold text-white mb-1 group-hover:text-cyan transition">
+                <h3 className="text-xs sm:text-sm font-bold text-white mb-1 group-hover:text-cyan transition truncate">
                   {skill.name}
                 </h3>
 
                 {/* Category Label */}
-                <p className="text-cyan text-[10px] font-mono uppercase tracking-wider mb-2 opacity-70">
+                <p className="text-cyan text-[9px] sm:text-[10px] font-mono uppercase tracking-wider mb-2 opacity-70 truncate">
                   {skill.category}
                 </p>
 
                 {/* Proficiency Badge */}
                 <div
-                  className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold"
+                  className="inline-block px-2 py-0.5 sm:px-2.5 sm:py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold"
                   style={{
                     backgroundColor: profColor.bg,
                     color: profColor.text,

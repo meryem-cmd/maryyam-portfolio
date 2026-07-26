@@ -1,22 +1,22 @@
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-[95vh] bg-gradient-to-b from-dark via-dark to-dark/95 flex items-center justify-center pt-30 relative overflow-hidden">
-      
-      {/* Blur blobs for premium/modern feel */}
-      <div className="absolute -top-32 right-0 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/10 blur-[120px] rounded-full"></div>
+    <section id="hero" className="min-h-[95vh] bg-gradient-to-b from-dark via-dark to-dark/95 flex items-center justify-center pt-28 sm:pt-32 pb-16 relative overflow-hidden">
 
-      <div className="max-w-[1400px] mx-auto px-10 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full relative z-10">
-        
+      {/* Blur blobs for premium/modern feel */}
+      <div className="absolute -top-32 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-0 left-0 w-56 h-56 sm:w-80 sm:h-80 bg-purple-500/10 blur-[120px] rounded-full"></div>
+
+      <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full relative z-10">
+
         {/* Left Side - Text Content */}
-        <div className="space-y-6 z-10">
+        <div className="space-y-5 sm:space-y-6 z-10">
 
           {/* Main Heading */}
           <div className="animate-fade-up" style={{ animationDelay: '0.05s' }}>
-            <span style={{ color: '#00D9FF' }} className="block text-glow font-extrabold text-lg md:text-xl tracking-wider mb-2">
+            <span style={{ color: '#00D9FF' }} className="block text-glow font-extrabold text-base sm:text-lg md:text-xl tracking-wider mb-2">
                 MARYYAM TANVEER
               </span>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-4">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-4 break-words">
               AI Enthusiast & {' '}
               <span style={{ color: '#00D9FF' }} className="block text-glow">
               Full Stack Developer
@@ -25,43 +25,43 @@ export default function Hero() {
           </div>
 
           {/* Description */}
-          <p className="text-gray-300 text-lg leading-8 max-w-xl animate-fade-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-gray-300 text-base sm:text-lg leading-7 sm:leading-8 max-w-xl animate-fade-up" style={{ animationDelay: '0.2s' }}>
             I enjoy turning ideas into real-world applications using React, Django, and modern web technologies. Currently expanding my skills in AI/ML and cloud deployment.
           </p>
 
           {/* Stats */}
-          <div className="flex gap-16 mt-6 animate-fade-up" style={{ animationDelay: '0.35s' }}>
+          <div className="flex gap-8 sm:gap-12 md:gap-16 mt-6 animate-fade-up" style={{ animationDelay: '0.35s' }}>
             <div>
-              <div className="text-3xl font-black" style={{ color: '#00D9FF' }}>3+</div>
+              <div className="text-2xl sm:text-3xl font-black" style={{ color: '#00D9FF' }}>3+</div>
               <div className="text-gray-500 text-xs font-mono tracking-wider uppercase">Projects</div>
             </div>
             <div>
-              <div className="text-3xl font-black" style={{ color: '#00D9FF' }}>2+</div>
+              <div className="text-2xl sm:text-3xl font-black" style={{ color: '#00D9FF' }}>2+</div>
               <div className="text-gray-500 text-xs font-mono tracking-wider uppercase">Internships</div>
             </div>
             <div>
-              <div className="text-3xl font-black" style={{ color: '#00D9FF' }}>∞</div>
+              <div className="text-2xl sm:text-3xl font-black" style={{ color: '#00D9FF' }}>∞</div>
               <div className="text-gray-500 text-xs font-mono tracking-wider uppercase">Learning</div>
             </div>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 pt-4 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-            <a 
+            <a
               href="#projects"
-              className="px-7 py-4 rounded-xl font-bold uppercase text-sm tracking-wider transition-all duration-300"
-              style={{ 
-                backgroundColor: '#00D9FF', 
+              className="w-full sm:w-auto text-center px-7 py-4 rounded-xl font-bold uppercase text-sm tracking-wider transition-all duration-300"
+              style={{
+                backgroundColor: '#00D9FF',
                 color: '#0a0e27',
                 boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)'
               }}
             >
               View my Work
             </a>
-            <a 
+            <a
               href="#contact"
-              className="px-7 py-4 rounded-xl font-bold uppercase text-sm tracking-wider border-2 transition-all duration-300 hover:bg-cyan/10 hover:border-cyan"
-              style={{ 
+              className="w-full sm:w-auto text-center px-7 py-4 rounded-xl font-bold uppercase text-sm tracking-wider border-2 transition-all duration-300 hover:bg-cyan/10 hover:border-cyan"
+              style={{
                 borderColor: '#00D9FF',
                 color: '#00D9FF'
               }}
@@ -71,11 +71,11 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Side - Visual */}
+        {/* Right Side - Visual (hidden below lg, unchanged above) */}
         <div className="hidden lg:flex items-center justify-center relative h-96 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <div className="absolute inset-0">
             {/* Large background circles */}
-            <div 
+            <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 width: '400px',
@@ -84,7 +84,7 @@ export default function Hero() {
                 border: '1px solid rgba(0, 217, 255, 0.1)',
               }}
             ></div>
-            <div 
+            <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 width: '300px',
@@ -93,7 +93,7 @@ export default function Hero() {
                 border: '1px solid rgba(0, 217, 255, 0.2)',
               }}
             ></div>
-            <div 
+            <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 width: '200px',
@@ -120,7 +120,7 @@ export default function Hero() {
             </svg>
 
             {/* Center glow - reduced from 120px to 90px */}
-            <div 
+            <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{
                 width: '90px',
