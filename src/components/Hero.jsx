@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-[90vh] bg-gradient-to-b from-dark via-dark to-dark/95 flex items-center justify-center pt-24 relative overflow-hidden">
+    <section id="hero" className="min-h-[95vh] bg-gradient-to-b from-dark via-dark to-dark/95 flex items-center justify-center pt-30 relative overflow-hidden">
       
       {/* Blur blobs for premium/modern feel */}
       <div className="absolute -top-32 right-0 w-96 h-96 bg-cyan-500/10 blur-[120px] rounded-full"></div>
@@ -17,17 +17,16 @@ export default function Hero() {
                 MARYYAM TANVEER
               </span>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-4">
-              Full-Stack &{' '}
+              AI Enthusiast & {' '}
               <span style={{ color: '#00D9FF' }} className="block text-glow">
-                AI Engineer
+              Full Stack Developer
               </span>
             </h2>
           </div>
 
           {/* Description */}
           <p className="text-gray-300 text-lg leading-8 max-w-xl animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            I build intelligent systems with React, Django, and AI/ML pipelines. 
-            Specialized in RAG systems, agentic workflows, and production deployments on AWS.
+            I enjoy turning ideas into real-world applications using React, Django, and modern web technologies. Currently expanding my skills in AI/ML and cloud deployment.
           </p>
 
           {/* Stats */}

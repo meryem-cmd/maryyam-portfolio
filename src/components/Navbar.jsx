@@ -21,16 +21,16 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <div className="hidden md:flex gap-12">
-          <a href="#hero" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">Hero</a>
-          <a href="#about" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">About</a>
-          <a href="#projects" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">Projects</a>
-          <a href="#skills" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">Skills</a>
-          <a href="#contact" className="text-gray-300 hover:text-cyan transition font-mono text-base uppercase tracking-wider">Contact</a>
+          <a href="#hero" className="text-gray-300 hover:text-blue-500 transition font-mono text-base uppercase tracking-wider">Hero</a>
+          <a href="#about" className="text-gray-300 hover:text-blue-500 transition font-mono text-base uppercase tracking-wider">About</a>
+          <a href="#projects" className="text-gray-300 hover:text-blue-500 transition font-mono text-base uppercase tracking-wider">Projects</a>
+          <a href="#skills" className="text-gray-300 hover:text-blue-500 transition font-mono text-base uppercase tracking-wider">Skills</a>
+          <a href="#contact" className="text-gray-300 hover:text-blue-500 transition font-mono text-base uppercase tracking-wider">Contact</a>
         </div>
 
         {/* Resume Button — downloads the PDF from /public/resume.pdf */}
         <a
-          href="/resume.pdf"
+          href="/maryyam_tanveer_resume.pdf"
           download="Maryyam-Tanveer-Resume.pdf"
           className="px-7 py-3 rounded-lg font-bold uppercase text-base tracking-wider transition-all duration-300 inline-block"
           style={{

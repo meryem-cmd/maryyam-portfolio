@@ -175,8 +175,7 @@ export default function Contact() {
             Let's Build Something
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Got an idea for an AI agent, automation pipeline, or intelligent system? 
-            I'd love to hear about it. Let's architect something amazing together.
+            Always excited to discuss new projects, opportunities, and collaborations. Whether you have an idea or just want to say hello, feel free to reach out!
           </p>
           <div className="w-20 h-1 rounded-full mt-8 mx-auto" style={{ backgroundColor: '#00D9FF' }}></div>
         </div>
@@ -215,7 +214,7 @@ export default function Contact() {
               <p className="text-cyan text-sm font-mono uppercase tracking-wider mb-4">Connect</p>
               <div className="flex items-center gap-4">
                 <a
-                  href="https://linkedin.com/in/maryyam-tanveer"
+                  href="https://www.linkedin.com/in/maryyam-tanveer/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -236,7 +235,7 @@ export default function Contact() {
                   <LinkedinIcon className="w-5 h-5 text-gray-300 group-hover/link:text-cyan transition-colors" />
                 </a>
                 <a
-                  href="https://github.com/maryyam"
+                  href="https://github.com/meryem-cmd"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
@@ -294,7 +293,7 @@ export default function Contact() {
                   placeholder="Your name"
                   className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition"
                   style={{
-                    borderColor: errors.name ? '#ef4444' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.name ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
                   }}
                 />
                 {errors.name && (
@@ -315,7 +314,7 @@ export default function Contact() {
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition"
                   style={{
-                    borderColor: errors.email ? '#ef4444' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.email ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
                   }}
                 />
                 {errors.email && (
@@ -336,7 +335,7 @@ export default function Contact() {
                   rows="5"
                   className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition resize-none"
                   style={{
-                    borderColor: errors.message ? '#ef4444' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.message ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
                   }}
                 />
                 {errors.message && (

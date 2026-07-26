@@ -146,7 +146,7 @@ export default function About() {
                 }}
               >
                 <p className="text-cyan text-xs font-mono uppercase tracking-wider font-bold mb-2">
-                  Developability Corp
+                  Developers Hub
                 </p>
                 <h3 className="text-xl font-black text-white mb-2">Front-end Developer</h3>
                 <p className="text-gray-500 text-xs font-mono mb-4">Jul 2025 — Aug 2025</p>
