@@ -47,7 +47,7 @@ export default function Projects() {
       id: 2,
       title: 'AI FitStyler',
       category: 'AI/ML',
-      
+      note: 'Built ~2 years ago',
       description: 'A multi-agent Streamlit app: upload a photo, and computer vision detects body type and skin tone, then a RAG pipeline semantically searches a product catalog for personalized outfit recommendations.',
       tags: ['Python', 'LangChain', 'FAISS', 'MediaPipe', 'OpenCV', 'Streamlit'],
       github: 'https://github.com/meryem-cmd/fitstyler',
@@ -74,7 +74,7 @@ export default function Projects() {
       id: 4,
       title: 'Enchanted Trinkets',
       category: 'Full-Stack',
-      
+      note: 'Built ~2 years ago',
       description: 'Full-stack e-commerce platform with role-based dashboards for managers, employees, and customers, plus Cloudinary-powered image workflows.',
       tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'JWT'],
       github: 'https://github.com/meryem-cmd/enchanted_trinkets',
@@ -88,7 +88,7 @@ export default function Projects() {
       id: 5,
       title: 'Django Blog App',
       category: 'Full-Stack',
-      
+      note: 'Built ~2 years ago',
       description: 'A full-stack dual-content platform migrating a legacy WordPress blog onto Django + Wagtail CMS, self-deployed to AWS EC2.',
       tags: ['Django', 'Wagtail', 'PostgreSQL', 'AWS EC2', 'Gunicorn', 'Whitenoise'],
       github: 'https://github.com/meryem-cmd/django-blog-app',
@@ -159,11 +159,11 @@ export default function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start ${fade()}`} style={{ animationDelay: '0.3s' }}>
+        <div className={`grid grid-cols-1 gap-6 ${fade()}`} style={{ animationDelay: '0.3s' }}>
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative rounded-xl overflow-hidden backdrop-blur-sm border transition-all duration-300 hover:scale-105 flex flex-col"
+              className="group relative rounded-xl overflow-hidden backdrop-blur-sm border transition-all duration-300 hover:border-accent"
               style={{
                 borderColor: 'rgba(93, 202, 165, 0.3)',
                 backgroundColor: 'rgba(26, 31, 58, 0.6)',
@@ -179,82 +179,84 @@ export default function Projects() {
               ></div>
 
               {/* Content */}
-              <div className="p-8 flex flex-col relative z-10">
-                
-                {/* Category Badge */}
-                <div className="flex items-center gap-2 flex-wrap mb-4">
-                  <span 
-                    className="text-xs font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full"
-                    style={{
-                      backgroundColor: 'rgba(93, 202, 165, 0.2)',
-                      color: '#5DCAA5'
-                    }}
-                  >
-                    {project.category}
-                  </span>
-                  {project.featured && (
+              <div className="p-8 flex flex-col lg:flex-row gap-8 relative z-10">
+
+                {/* Left - main content */}
+                <div className="flex-1 min-w-0">
+                  {/* Category Badge */}
+                  <div className="flex items-center gap-2 flex-wrap mb-4">
                     <span 
                       className="text-xs font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full"
                       style={{
-                        backgroundColor: '#5DCAA5',
-                        color: '#04342C'
+                        backgroundColor: 'rgba(93, 202, 165, 0.2)',
+                        color: '#5DCAA5'
                       }}
                     >
-                      ★ Featured
+                      {project.category}
                     </span>
-                  )}
-                  {project.note && (
-                    <span className="text-xs text-gray-500 font-mono">{project.note}</span>
-                  )}
-                </div>
-
-                {/* Title */}
-                <h3 className="text-2xl font-black text-white mb-3">
-                  {project.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-300 text-sm leading-relaxed mb-6">
-                  {project.description}
-                </p>
-
-                {/* Achievements */}
-                <div className="mb-6 space-y-2">
-                  {project.achievements.map((achievement, idx) => (
-                    <div key={idx} className="flex gap-2 text-xs text-gray-400">
-                      <span className="text-accent mt-1">→</span>
-                      <span>{achievement}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Tech Stack */}
-                <div className="mb-6">
-                  <p className="text-accent text-xs font-mono uppercase tracking-wider mb-3">Tech Stack</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 rounded-lg text-xs font-mono"
+                    {project.featured && (
+                      <span 
+                        className="text-xs font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-full"
                         style={{
-                          backgroundColor: 'rgba(93, 202, 165, 0.1)',
-                          color: '#5DCAA5',
-                          border: '1px solid rgba(93, 202, 165, 0.3)'
+                          backgroundColor: '#5DCAA5',
+                          color: '#04342C'
                         }}
                       >
-                        {tag}
+                        ★ Featured
                       </span>
+                    )}
+                    {project.note && (
+                      <span className="text-xs text-gray-500 font-mono">{project.note}</span>
+                    )}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="text-2xl font-black text-white mb-3">
+                    {project.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                    {project.description}
+                  </p>
+
+                  {/* Achievements */}
+                  <div className="space-y-2">
+                    {project.achievements.map((achievement, idx) => (
+                      <div key={idx} className="flex gap-2 text-xs text-gray-400">
+                        <span className="text-accent mt-1">→</span>
+                        <span>{achievement}</span>
+                      </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Buttons */}
-                <div className="flex gap-3 pt-4 border-t border-accent/20">
+                {/* Right - tech stack + button sidebar */}
+                <div className="lg:w-64 shrink-0 flex flex-col justify-between lg:border-l lg:pl-8 border-accent/20 pt-6 lg:pt-0 mt-6 lg:mt-0 border-t lg:border-t-0">
+                  <div className="mb-6">
+                    <p className="text-accent text-xs font-mono uppercase tracking-wider mb-3">Tech Stack</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, idx) => (
+                        <span
+                          key={idx}
+                          className="px-3 py-1 rounded-lg text-xs font-mono"
+                          style={{
+                            backgroundColor: 'rgba(93, 202, 165, 0.1)',
+                            color: '#5DCAA5',
+                            border: '1px solid rgba(93, 202, 165, 0.3)'
+                          }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 px-4 py-2 rounded-lg font-bold uppercase text-xs tracking-wider transition-all duration-300 text-center"
+                    className="px-4 py-2 rounded-lg font-bold uppercase text-xs tracking-wider transition-all duration-300 text-center"
                     style={{
                       backgroundColor: 'rgba(93, 202, 165, 0.1)',
                       color: '#5DCAA5',
@@ -263,7 +265,6 @@ export default function Projects() {
                   >
                     View Code
                   </a>
-                  
                 </div>
               </div>
             </div>
