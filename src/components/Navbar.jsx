@@ -20,7 +20,7 @@ export default function Navbar() {
       <div
         className="max-w-7xl mx-auto rounded-2xl backdrop-blur-xl border"
         style={{
-          background: "rgba(10,14,39,.75)",
+          background: "rgba(18,24,26,.75)",
           borderColor: "rgba(255,255,255,.08)",
         }}
       >
@@ -30,7 +30,7 @@ export default function Navbar() {
           <a
             href="#hero"
             className="text-base sm:text-xl font-black tracking-wider cursor-pointer whitespace-nowrap"
-            style={{ color: "#00D9FF" }}
+            style={{ color: "#5DCAA5" }}
             onClick={() => setOpen(false)}
           >
             Maryyam's Portfolio
@@ -55,9 +55,9 @@ export default function Navbar() {
             download="Maryyam-Tanveer-Resume.pdf"
             className="hidden md:inline-block px-7 py-3 rounded-lg font-bold uppercase text-base tracking-wider transition-all duration-300"
             style={{
-              backgroundColor: "#00D9FF",
-              color: "#0a0e27",
-              boxShadow: "0 0 15px rgba(0, 217, 255, 0.3)",
+              backgroundColor: "#5DCAA5",
+              color: "#04342C",
+              boxShadow: "0 0 15px rgba(93, 202, 165, 0.3)",
             }}
           >
             ↓ RESUME
@@ -71,9 +71,9 @@ export default function Navbar() {
             onClick={() => setOpen((v) => !v)}
             className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border transition-colors"
             style={{
-              borderColor: "rgba(0, 217, 255, 0.3)",
-              color: "#00D9FF",
-              backgroundColor: open ? "rgba(0, 217, 255, 0.08)" : "transparent",
+              borderColor: "rgba(93, 202, 165, 0.3)",
+              color: "#5DCAA5",
+              backgroundColor: open ? "rgba(93, 202, 165, 0.08)" : "transparent",
             }}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -106,9 +106,9 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-3 text-center px-7 py-3 rounded-lg font-bold uppercase text-sm tracking-wider transition-all duration-300"
               style={{
-                backgroundColor: "#00D9FF",
-                color: "#0a0e27",
-                boxShadow: "0 0 15px rgba(0, 217, 255, 0.3)",
+                backgroundColor: "#5DCAA5",
+                color: "#04342C",
+                boxShadow: "0 0 15px rgba(93, 202, 165, 0.3)",
               }}
             >
               ↓ RESUME

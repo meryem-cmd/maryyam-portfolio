@@ -14,20 +14,20 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top right, rgba(0,217,255,.08), transparent 35%),
-    radial-gradient(circle at bottom left, rgba(118,76,255,.08), transparent 35%),
-    #090d22;
+    radial-gradient(circle at top right, rgba(93,202,165,.08), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(118,76,255,.06), transparent 35%),
+    #12181A;
   color: #e5e7eb;
   font-family: 'Inter', sans-serif;
 }
 
 /* Custom utilities */
 .text-glow {
-  text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+  /* glow removed intentionally - flat color reads cleaner than neon shadow */
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00D9FF 0%, #1e90ff 100%);
+  background: linear-gradient(135deg, #5DCAA5 0%, #0F6E56 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

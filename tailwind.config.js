@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'cyan': '#00D9FF',
-        'dark': '#0a0e27',
-        'darkCard': '#1a1f3a',
+        'accent': '#5DCAA5',
+        'accentDark': '#04342C',
+        'dark': '#12181A',
+        'darkCard': '#1B2224',
       },
       fontFamily: {
-        'sans': ['Segoe UI', 'Roboto','Inter', 'sans-serif'],
-        
+        'sans': ['Segoe UI', 'Roboto', 'Inter', 'sans-serif'],
       },
     },
   },

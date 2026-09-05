@@ -160,7 +160,7 @@ export default function Contact() {
       {/* Ambient background blob — matches Hero/About/Skills */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[120px] pointer-events-none"
-        style={{ backgroundColor: 'rgba(0, 217, 255, 0.08)' }}
+        style={{ backgroundColor: 'rgba(93, 202, 165, 0.08)' }}
       />
 
       <div className="relative max-w-[1400px] mx-auto px-10 lg:px-20 w-full">
@@ -171,13 +171,13 @@ export default function Contact() {
             isVisible ? 'animate-fade-up' : 'opacity-0 translate-y-6'
           }`}
         >
-          <h2 className="text-5xl md:text-6xl font-black leading-tight mb-8" style={{ color: '#00D9FF' }}>
+          <h2 className="text-5xl md:text-6xl font-black leading-tight mb-8" style={{ color: '#5DCAA5' }}>
             Let's Build Something
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Always excited to discuss new projects, opportunities, and collaborations. Whether you have an idea or just want to say hello, feel free to reach out!
           </p>
-          <div className="w-20 h-1 rounded-full mt-8 mx-auto" style={{ backgroundColor: '#00D9FF' }}></div>
+          <div className="w-20 h-1 rounded-full mt-8 mx-auto" style={{ backgroundColor: '#5DCAA5' }}></div>
         </div>
 
         {/* Contact Content Grid */}
@@ -193,11 +193,11 @@ export default function Contact() {
 
             {/* Email */}
             <div className="group">
-              <p className="text-2xl font-bold text-white hover:text-cyan transition">Email</p>
+              <p className="text-2xl font-bold text-white hover:text-accent transition">Email</p>
               <a
-                href="mailto:maryyam.tanveer@gmail.com"
+                href="mailto:tanvirmeryem2@gmail.com"
                 
-                className="text-cyan text-sm font-mono  tracking-wider mb-3"
+                className="text-accent text-sm font-mono  tracking-wider mb-3"
               >
                 tanvirmeryem2@gmail.com
               </a>
@@ -206,12 +206,12 @@ export default function Contact() {
             {/* Location */}
             <div className="group">
               <p className="text-2xl font-bold text-white">Location</p>
-              <p className="text-cyan text-sm font-mono uppercase tracking-wider mb-3" >Lahore, Pakistan</p>
+              <p className="text-accent text-sm font-mono uppercase tracking-wider mb-3" >Lahore, Pakistan</p>
             </div>
 
             {/* Social Links — now real GitHub/LinkedIn logos */}
             <div className="group">
-              <p className="text-cyan text-sm font-mono uppercase tracking-wider mb-4">Connect</p>
+              <p className="text-accent text-sm font-mono uppercase tracking-wider mb-4">Connect</p>
               <div className="flex items-center gap-4">
                 <a
                   href="https://www.linkedin.com/in/maryyam-tanveer/"
@@ -220,19 +220,19 @@ export default function Contact() {
                   aria-label="LinkedIn"
                   className="group/link w-12 h-12 rounded-lg flex items-center justify-center border transition-all duration-300"
                   style={{
-                    borderColor: 'rgba(0, 217, 255, 0.3)',
+                    borderColor: 'rgba(93, 202, 165, 0.3)',
                     backgroundColor: 'rgba(26, 31, 58, 0.5)',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#00D9FF';
-                    e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 217, 255, 0.4)';
+                    e.currentTarget.style.borderColor = '#5DCAA5';
+                    e.currentTarget.style.boxShadow = '0 0 20px rgba(93, 202, 165, 0.4)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.3)';
+                    e.currentTarget.style.borderColor = 'rgba(93, 202, 165, 0.3)';
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 >
-                  <LinkedinIcon className="w-5 h-5 text-gray-300 group-hover/link:text-cyan transition-colors" />
+                  <LinkedinIcon className="w-5 h-5 text-gray-300 group-hover/link:text-accent transition-colors" />
                 </a>
                 <a
                   href="https://github.com/meryem-cmd"
@@ -241,29 +241,29 @@ export default function Contact() {
                   aria-label="GitHub"
                   className="group/link w-12 h-12 rounded-lg flex items-center justify-center border transition-all duration-300"
                   style={{
-                    borderColor: 'rgba(0, 217, 255, 0.3)',
+                    borderColor: 'rgba(93, 202, 165, 0.3)',
                     backgroundColor: 'rgba(26, 31, 58, 0.5)',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#00D9FF';
-                    e.currentTarget.style.boxShadow = '0 0 20px rgba(0, 217, 255, 0.4)';
+                    e.currentTarget.style.borderColor = '#5DCAA5';
+                    e.currentTarget.style.boxShadow = '0 0 20px rgba(93, 202, 165, 0.4)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = 'rgba(0, 217, 255, 0.3)';
+                    e.currentTarget.style.borderColor = 'rgba(93, 202, 165, 0.3)';
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 >
-                  <GithubIcon className="w-5 h-5 text-gray-300 group-hover/link:text-cyan transition-colors" />
+                  <GithubIcon className="w-5 h-5 text-gray-300 group-hover/link:text-accent transition-colors" />
                 </a>
               </div>
             </div>
 
             {/* Response Time */}
             <div className="p-6 rounded-lg border" style={{
-              borderColor: 'rgba(0, 217, 255, 0.3)',
+              borderColor: 'rgba(93, 202, 165, 0.3)',
               backgroundColor: 'rgba(26, 31, 58, 0.5)',
             }}>
-              <p className="text-cyan text-sm font-mono uppercase tracking-wider mb-2">Response Time</p>
+              <p className="text-accent text-sm font-mono uppercase tracking-wider mb-2">Response Time</p>
               <p className="text-white font-bold">Typically within 24 hours</p>
               <p className="text-gray-400 text-sm mt-2">I read every message and love discussing new ideas!</p>
             </div>
@@ -276,13 +276,13 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="space-y-6 p-8 rounded-lg border backdrop-blur-sm"
               style={{
-                borderColor: 'rgba(0, 217, 255, 0.3)',
+                borderColor: 'rgba(93, 202, 165, 0.3)',
                 backgroundColor: 'rgba(26, 31, 58, 0.5)',
               }}
             >
               {/* Name Field */}
               <div>
-                <label className="block text-cyan text-sm font-mono uppercase tracking-wider mb-2">
+                <label className="block text-accent text-sm font-mono uppercase tracking-wider mb-2">
                   Name
                 </label>
                 <input
@@ -291,9 +291,9 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleInputChange}
                   placeholder="Your name"
-                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition"
+                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
                   style={{
-                    borderColor: errors.name ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.name ? 'rgba(93, 202, 165, 0.3)' : 'rgba(93, 202, 165, 0.3)',
                   }}
                 />
                 {errors.name && (
@@ -303,7 +303,7 @@ export default function Contact() {
 
               {/* Email Field */}
               <div>
-                <label className="block text-cyan text-sm font-mono uppercase tracking-wider mb-2">
+                <label className="block text-accent text-sm font-mono uppercase tracking-wider mb-2">
                   Email
                 </label>
                 <input
@@ -312,9 +312,9 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleInputChange}
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition"
+                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-accent transition"
                   style={{
-                    borderColor: errors.email ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.email ? 'rgba(93, 202, 165, 0.3)' : 'rgba(93, 202, 165, 0.3)',
                   }}
                 />
                 {errors.email && (
@@ -324,7 +324,7 @@ export default function Contact() {
 
               {/* Message Field */}
               <div>
-                <label className="block text-cyan text-sm font-mono uppercase tracking-wider mb-2">
+                <label className="block text-accent text-sm font-mono uppercase tracking-wider mb-2">
                   Message
                 </label>
                 <textarea
@@ -333,9 +333,9 @@ export default function Contact() {
                   onChange={handleInputChange}
                   placeholder="Tell me about your project or idea..."
                   rows="5"
-                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-cyan transition resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-dark/50 border text-white placeholder-gray-500 focus:outline-none focus:border-accent transition resize-none"
                   style={{
-                    borderColor: errors.message ? 'rgba(0, 217, 255, 0.3)' : 'rgba(0, 217, 255, 0.3)',
+                    borderColor: errors.message ? 'rgba(93, 202, 165, 0.3)' : 'rgba(93, 202, 165, 0.3)',
                   }}
                 />
                 {errors.message && (
@@ -369,11 +369,11 @@ export default function Contact() {
                 disabled={isLoading || !isValid}
                 className="w-full py-3 rounded-lg font-bold uppercase text-sm tracking-wider transition-all duration-300"
                 style={{
-                  backgroundColor: isLoading || !isValid ? 'rgba(0, 217, 255, 0.4)' : '#00D9FF',
-                  color: '#0a0e27',
+                  backgroundColor: isLoading || !isValid ? 'rgba(93, 202, 165, 0.4)' : '#5DCAA5',
+                  color: '#04342C',
                   opacity: isLoading || !isValid ? 0.6 : 1,
                   cursor: isLoading || !isValid ? 'not-allowed' : 'pointer',
-                  boxShadow: !isLoading && isValid ? '0 0 20px rgba(0, 217, 255, 0.4)' : 'none'
+                  boxShadow: !isLoading && isValid ? '0 0 20px rgba(93, 202, 165, 0.4)' : 'none'
                 }}
               >
                 {isLoading ? (

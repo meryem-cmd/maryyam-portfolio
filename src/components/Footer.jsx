@@ -66,7 +66,7 @@ export default function Footer() {
       ref={sectionRef}
       id="footer"
       className="bg-dark border-t"
-      style={{ borderColor: 'rgba(0, 217, 255, 0.1)' }}
+      style={{ borderColor: 'rgba(93, 202, 165, 0.1)' }}
     >
       <div className="max-w-7xl mx-auto px-6 py-20">
         
@@ -75,7 +75,7 @@ export default function Footer() {
           
           {/* Brand Section */}
           <div style={fadeIn(0.1)}>
-            <a href="#hero" className="text-2xl font-black tracking-wider cursor-pointer" style={{ color: '#00D9FF' }}>
+            <a href="#hero" className="text-2xl font-black tracking-wider cursor-pointer" style={{ color: '#5DCAA5' }}>
               Maryyam
             </a>
             <p className="text-gray-400 text-sm mt-4 leading-relaxed">
@@ -90,7 +90,7 @@ export default function Footer() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block text-gray-400 hover:text-cyan transition font-mono text-sm"
+                  className="block text-gray-400 hover:text-accent transition font-mono text-sm"
                 >
                   {link.label}
                 </a>
@@ -107,11 +107,11 @@ export default function Footer() {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-400 hover:text-cyan transition group"
+                  className="flex items-center gap-3 text-gray-400 hover:text-accent transition group"
                 >
                   <span className="text-xl">{social.icon}</span>
                   <span className="font-mono text-sm">{social.name}</span>
-                  <span className="text-cyan opacity-0 group-hover:opacity-100 transition">→</span>
+                  <span className="text-accent opacity-0 group-hover:opacity-100 transition">→</span>
                 </a>
               ))}
             </div>
@@ -119,10 +119,10 @@ export default function Footer() {
 
           {/* Quick Info */}
           <div style={fadeIn(0.25)}>
-            <p className="text-cyan text-sm font-mono uppercase tracking-widest mb-6">Info</p>
+            <p className="text-accent text-sm font-mono uppercase tracking-widest mb-6">Info</p>
             <div className="space-y-3 text-sm text-gray-400 font-mono">
               <p>📍 Lahore, Pakistan</p>
-              <p>✉️ maryyam.tanveer@gmail.com</p>
+              <p>✉️ tanvirmeryem2@gmail.com</p>
               
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Footer() {
         {/* Divider */}
         <div 
           className="my-8"
-          style={{ borderTop: '1px solid rgba(0, 217, 255, 0.1)' }}
+          style={{ borderTop: '1px solid rgba(93, 202, 165, 0.1)' }}
         ></div>
 
         {/* Bottom Footer */}
@@ -142,11 +142,11 @@ export default function Footer() {
             onClick={scrollToTop}
             className="px-6 py-2 rounded-lg font-bold uppercase text-sm tracking-wider transition-all duration-300 border flex items-center gap-2"
             style={{
-              borderColor: '#00D9FF',
-              color: '#00D9FF',
+              borderColor: '#5DCAA5',
+              color: '#5DCAA5',
             }}
             onMouseEnter={(e) => {
-              e.target.style.backgroundColor = 'rgba(0, 217, 255, 0.1)';
+              e.target.style.backgroundColor = 'rgba(93, 202, 165, 0.1)';
             }}
             onMouseLeave={(e) => {
               e.target.style.backgroundColor = 'transparent';
@@ -163,10 +163,10 @@ export default function Footer() {
           
 
           {/* Status */}
-          <div className="text-sm font-mono font-bold uppercase tracking-wider" style={{ color: '#00D9FF' }}>
+          <div className="text-sm font-mono font-bold uppercase tracking-wider" style={{ color: '#5DCAA5' }}>
   <span 
     className="inline-block w-2 h-2 rounded-full mr-2"
-    style={{ backgroundColor: '#00D9FF', animation: 'pulse 2s infinite' }}
+    style={{ backgroundColor: '#5DCAA5', animation: 'pulse 2s infinite' }}
   ></span>
   Open to opportunities
 </div>
