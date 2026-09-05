@@ -47,7 +47,7 @@ export default function Projects() {
       id: 2,
       title: 'AI FitStyler',
       category: 'AI/ML',
-      note: 'Built ~2 years ago',
+     
       description: 'A multi-agent Streamlit app: upload a photo, and computer vision detects body type and skin tone, then a RAG pipeline semantically searches a product catalog for personalized outfit recommendations.',
       tags: ['Python', 'LangChain', 'FAISS', 'MediaPipe', 'OpenCV', 'Streamlit'],
       github: 'https://github.com/meryem-cmd/fitstyler',
@@ -74,7 +74,7 @@ export default function Projects() {
       id: 4,
       title: 'Enchanted Trinkets',
       category: 'Full-Stack',
-      note: 'Built ~2 years ago',
+      
       description: 'Full-stack e-commerce platform with role-based dashboards for managers, employees, and customers, plus Cloudinary-powered image workflows.',
       tags: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Cloudinary', 'JWT'],
       github: 'https://github.com/meryem-cmd/enchanted_trinkets',
@@ -88,7 +88,7 @@ export default function Projects() {
       id: 5,
       title: 'Django Blog App',
       category: 'Full-Stack',
-      note: 'Built ~2 years ago',
+      
       description: 'A full-stack dual-content platform migrating a legacy WordPress blog onto Django + Wagtail CMS, self-deployed to AWS EC2.',
       tags: ['Django', 'Wagtail', 'PostgreSQL', 'AWS EC2', 'Gunicorn', 'Whitenoise'],
       github: 'https://github.com/meryem-cmd/django-blog-app',
