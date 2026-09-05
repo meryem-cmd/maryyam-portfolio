@@ -37,7 +37,7 @@ export default function Hero() {
               Hi, I'm <span style={{ color: '#5DCAA5' }}>Maryyam Tanveer</span>.
             </h1>
             <p className="flex items-center gap-2 text-gray-400 text-lg sm:text-xl font-medium mt-3">
-              <span style={{ color: '#5DCAA5' }}>&gt;</span> Full-Stack Developer & AI/ML Integrations
+              <span style={{ color: '#5DCAA5' }}>&gt;</span>Full-Stack Developer building AI-integrated systems
             </p>
           </div>
 
